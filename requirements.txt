@@ -1,0 +1,5 @@
+numpy
+pytest
+pytest-cov
+qcodes==0.31.0
+xxhash
