@@ -16,7 +16,7 @@ def snapshot(update: bool = False, clean: bool = True) -> dict:
         If True, removes certain keys from the snapshot to create a more readable and
         compact snapshot.
     """
-    snap = {"instruments": {}, "parameters": {}}
+    snap: dict = {"instruments": {}, "parameters": {}}
 
     for ins_name, ins_ref in Instrument._all_instruments.items():
         ref = ins_ref()
